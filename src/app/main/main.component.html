@@ -1,0 +1,6 @@
+<div class="maincontainer">
+  <span>Main Component</span>
+  <div>Name:{{names}}</div>
+  <div>Selector:{{name}}</div>
+  <app-outer [outer]="names" (eventFromOuter)="eventFromOuter($event)"></app-outer>
+</div>

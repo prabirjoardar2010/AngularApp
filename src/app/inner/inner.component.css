@@ -1,0 +1,9 @@
+.innercontainer{
+    height: 150px;
+    width: 150px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    line-height: 150px;
+    display: inline-block;  
+}
