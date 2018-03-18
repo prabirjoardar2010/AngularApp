@@ -7,7 +7,9 @@ import { Component, OnInit,Input,Output,EventEmitter } from '@angular/core';
 })
 export class OuterComponent implements OnInit {
   name:string="";
-  @Input() outer;
+  result1:string="";
+  @Input() result;
+  @Input() names;
   @Output() eventFromOuter=new EventEmitter<string>();
   constructor() { }
 
@@ -15,6 +17,7 @@ export class OuterComponent implements OnInit {
   }
   eventFromInner(passed:string){
     this.name=passed;
-    this.eventFromOuter.emit(this.name);
+    this.result1=passed;
+    this.eventFromOuter.emit(this.result1);
   }
 }

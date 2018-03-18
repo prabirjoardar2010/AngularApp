@@ -1,6 +1,7 @@
 <div class="outercontainer">  
   <span>Outer</span>
-  <div>Outer Names:{{outer}}</div>
+  <div>Name:{{result}}</div>
+  <div>Outer Names:{{names}}</div>
   <div>Selector:{{name}}</div>
-  <app-inner *ngFor="let name of outer" [inner]="name" (eventFromInner)="eventFromInner($event)"></app-inner>
+  <app-inner *ngFor="let name of names"  [name]="name" [result]="result" (eventFromInner)="eventFromInner($event)"></app-inner>
 </div>

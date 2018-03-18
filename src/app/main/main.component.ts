@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
   names=["red","blue","green"];
+  result:string="prabir";
   name:string='';
   constructor() { }
 

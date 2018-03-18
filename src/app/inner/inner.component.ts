@@ -6,7 +6,8 @@ import { Component, OnInit,Input,EventEmitter,Output } from '@angular/core';
   styleUrls: ['./inner.component.css']
 })
 export class InnerComponent implements OnInit {
-  @Input() inner:string;
+  @Input() result:string;
+  @Input() name:string;      
   @Output() eventFromInner=new EventEmitter<string>();
   constructor() { }
 
@@ -14,7 +15,7 @@ export class InnerComponent implements OnInit {
   }
   sendToOuter(){
     //console.log('clicked');
-    this.eventFromInner.emit(this.inner);
+    this.eventFromInner.emit(this.result);
   }
 
 }
